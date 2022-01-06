@@ -1,0 +1,74 @@
+***************************Class 07 Notes********************
+Frames:
+identify the Iframe:
+1.right click and if you see view frame source it means it is an iframe
+2.The iframe are emebedded in the webpage under the tag <iframe> , so search for "//iframe" and it will show you all the iframe avaialble
+  Example:
+      <html>
+        <body>
+        	<iframe   id="frame1">
+        		<html>
+        			<body>
+
+        			</body>
+        		</html>
+        	</iframe>
+
+
+        	<iframe  id="frame2">
+        		<html>
+        			<body>
+
+        			</body>
+        		</html>
+        	</iframe>
+
+		</body>
+      <html>
+
+
+before interacting with frames we need to tell our driver to ( switch to ) the desired frame
+ There are three ways to interact with frames:
+ 1.by index  --->driver.swithTo().frame(int index)-->the index on which our frame lies
+ 2.by name or ID -->driver.switchTo().frame(String ID or Name)-->only id or name can be used
+ 3.by WebElement -->driver.switchTo().frame(WebElement)--> pass in the WebElement i.e the desried iframe
+
+ defaultContent()---> switch the focus back to the main page
+
+ in alerts--> no need to switch back focus
+ in frames --> we have to switch our focus back to home page
+
+
+ ****Authentication Alerts******
+ Authentication aleertd we need to give user name and password
+ in order to handle them we pass the parameters i.e username and password in the url
+
+ htpps://admin:admin@the-internet.herokuapp.com/basic_auth
+
+How do u handle Alerts in Selenium?
+By using Alert interface in selenium
+
+
+
+
+*********************Windows Handles***********************************
+
+Selenium treats tabs and windows almost same
+
+WindowHandle:
+a uniqueId , the address of that window
+it is 40 characters alphanumeric
+
+
+Handling Windows inn Selenium:
+In order to handlge them we will be using methods:
+1.getWindowHanlde()--> give the address of the current window the selenium is focusing onto
+2.getWindowsHandles()--> gives the address of all the windows
+
+
+
+To switch to a particular window
+driver.switchTo.window(Handle of the Desired Window)
+
+
+

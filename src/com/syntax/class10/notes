@@ -1,0 +1,44 @@
+**********************Selenium Class 10***********
+
+WebTables:
+static and dynamic
+rows and columns
+
+html:
+
+<tables>
+		<thead>
+
+		</thead>
+
+
+
+		<tbody>
+			<tr>
+					<td> </td>
+
+			</tr>
+			<tr></tr
+
+		</tbody>
+
+
+</tables>
+
+
+
+Tables with pagination:
+Tables divided into several pages, the navigation bar is called PAGINATION
+
+
+
+NoSuchElementException:
+1.the locator is wrong
+2.the element has not populated yet on the page
+
+The driver executable does not exist:
+the driver path is not correct
+
+
+StaleElementException:
+1.the element that we are looking for is no longer there (it dissaperead after some time)

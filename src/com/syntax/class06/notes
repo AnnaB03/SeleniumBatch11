@@ -1,0 +1,72 @@
+***********Seleneium Class 06***********
+
+What is a drop Down?
+
+1.Single Select-->one option
+2.multiple select-->more then one
+
+Two methods to handle drop downs:
+1.Click on the drop Down and then Select the option
+2.Use Select Class
+Condition:
+<select> tag is there in the drop down
+
+Select class is a class available to us in seleinium which has
+different methods that help us to handle the drop downs
+
+Steps to use select class:
+
+1.to find the webElement "dropdown" having the select class
+2.Create an object of Select class(webElement(which has the select tag))
+3.Use any method provided by Select class to select the option you desire
+    a.  .Byvalue() -->parameters  the value attribute  "value" in <options> tag
+    b.  .Byindex() -->parameter   the index of the option that you want to select
+    c.  .ByVisibleText() -->parameter the text in the tag <option> which we want to select
+
+4. .getOptions()--> no parameter returns us all the tags <options> which are child of <select tag>
+return type is <list>WebElements
+
+
+
+Multiple select drop down
+
+1. isMultiple()--> if the drop dwon is multiselect or not
+additonal methods:
+
+a. deselectbyindex()
+b. deslectbyvalue()
+c. deselectbyvisibletext();
+d. deslectAll()
+exception :
+No such element exception --> the Webelement you are looking for is not there on the page
+
+
+Alerts:
+a popup message,it takes the focus completely off the page
+We cannot procceed in selenium until it is handled
+
+3 types of Alerts:
+
+1.webabsed alerts --> it is an html based alert / we can resolve them simply by insepecting
+2.Javascript Alerts/browser alerts --> we can handle them by insepcting? NO (because they donot have html),we handle them using  switchTo method in selenium
+
+3.Windows based alerts: cannot handle with selenium
+
+
+
+Javascript Alerts:
+3 Types
+1.Simple Alert --> click ok
+2.Confirmation Alert --> either cancel or ok
+3.Promp Alert -->enter text and cancel or ok
+
+
+HOW TO HANDLE THESE JAVASCRIPT ALERTS IN SLENIUM
+USING "alert interface"
+
+The methods it gives us:
+1.accept()
+2.dimsiss()
+3.getText()
+4.sendKeys()
+

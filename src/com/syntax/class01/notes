@@ -1,0 +1,132 @@
+---------------------------SELENIUM CLASS 01----------------------
+
+What is  Software testing?
+--identify the quality and correctness of the Software
+
+How many ways can we test a software?
+1.Manual
+2.Automation
+
+When do we go for automation?
+--frequent regression testing is required
+--repeated test case execution
+--efficiency
+
+What are the tools that we have for automation?
+SELENIUM, UFT/QTP ,Cucumber, TestNG, KAtlon Studio
+
+ Levels of Testing?
+ 1.Unit Testing
+ 2.Integration testing
+ 3.System testing
+ 4.Acceptance testing
+
+
+Types of Testing?
+1.Functional testing
+2.Non Functional testing(performance , security)
+
+What is Selenium?
+--A set of tools that help us to automate
+Web based applications only
+It is usually used for performance Testing
+
+
+--------Selenium suite ....
+1.SELENIUM IDE-->it is a plugin , record and play ...
+cons: no programming
+
+2.SELENIUM RC(remote control)
+
+a.Supports differnet programming languages
+b.it supports differnet browsers
+c.it requires a rc server
+
+
+3.SELENIUM Webdriver
+a.support differnet browsers
+b.it will support differnet languages
+
+4.SELENIUM GRID
+1.consist of a node and hub
+2.run test cases in parallel on differnt browsers
+
+
+Selnium 1
+Selnium2--> Selenium RC and webDriver (combined)
+Selnium3-->  some improvemnets in Selnium 2
+Selnium4--> some changes and improvemnets in the communication protocols
+
+
+Advantages of Selnium:
+  --Open Source
+  --Compatible with different languages (java, ruby,C#)
+  --It allows you to have your test cases run on differnt browsers (firefox, opera, chrome e.t.c)
+  --its not OS dependent (windows, MAC,LINUX)
+
+Disadvantages of Selenium:
+  --No technical support
+  --We can not test desktop applications
+  --no  built in reports
+  --can not test captachas ,images and videos
+
+
+  Selinium Architecture :
+
+
+
+----------close() vs quit()
+
+      driver.close()-->it will close the current tab that we are on
+
+      driver.quit()--> it will simply close the whole browser
+
+
+----------get() vs navigate()
+--using navigate we can move forward, backward and refresh the page
+  but using get we can not do that
+
+
+
+    TASK----------
+Create a new class named MissionImpossible
+
+    /**
+     * 1. launch the browser
+     * 2. navigate to amazon web site
+     * 3. print out the title and the url in the console
+     * 4. close the browser
+     */
+
+
+     --all webpages are made of usually HTML,CSS and js
+
+     we have tags in HTML
+     1.tags have differnet purposes i.e to define headings, pragraphs, picture e.t.c
+    ** we must have a opening and a closing tag
+     <html>
+
+     </html>
+
+
+
+
+
+example how html works
+<batch11> //tag
+     <listofstudents>
+            <name>sorbon</name>
+            <name>hasim</name>
+     </listofstudents>
+
+     <instrcutors>
+            <name>moazzam</name>
+            <name>asghar</name>
+     </instrcutors>
+ </batch11>
+
+
+ //html
+
+ <tag attribute>
+ </tag>
